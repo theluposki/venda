@@ -1,23 +1,10 @@
-const store = Vuex.createStore({
-    state () {
-      return {
-        count: 0
-      }
-    },
-    mutations: {
-      increment (state) {
-        state.count++
-      }
-    }
-})
+import { store } from "./store/index.js"
+import { routes } from "./router/index.js"
 
-const Home  = { template: "<h1>Home</h1>" }
-const About = { template: "<h1>About</h1>" }
 
-export const routes = [
-  { path: "/", component: Home },
-  { path: "/about", component: About },
-];
+import { Headers } from "./components/Headers.js"
+import { Navigation } from "./components/Navigation.js"
+
 
 const router = VueRouter.createRouter({
   history: VueRouter.createWebHashHistory(),
@@ -25,6 +12,10 @@ const router = VueRouter.createRouter({
 });
 
 const app = Vue.createApp({
+  components: {
+    Headers,
+    Navigation
+  },
   data(){
     return {
       title: "MyApp Vue =D"
