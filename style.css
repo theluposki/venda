@@ -135,6 +135,7 @@ a.active-link {
   min-height: 300px;
   border: solid 1px var(--dark);
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .products li .i-header {
