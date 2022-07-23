@@ -147,7 +147,21 @@ a.active-link {
   left: 0;
   min-width: 100%;
   min-height: 60px;
-  background: rgba(250, 250, 250, 0.5);
+  background: rgba(33, 33, 33, 0.8);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.i-header .i-title {
+  font-size: 26px;
+  color: #46a094;
+}
+
+.i-header span {
+  color: var(--white);
+  text-shadow: 0 -10px 12px var(--silver);
+  font-weight: 600;
 }
 
 .products li .i-main {
@@ -169,7 +183,7 @@ a.active-link {
   left: 0;
   min-width: 100%;
   min-height: 40px;
-  background: rgba(33, 33, 33, 0.3);
+  background: rgba(33, 33, 33, 0.5);
 }
 
 /* end Products */

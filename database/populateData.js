@@ -40,7 +40,7 @@ export const database = {
     {
       id: crypto.randomUUID(),
       title: "Pizza",
-      subtitle: "Pazza Origina Italiana.",
+      subtitle: "Pizza Original Italiana.",
       urlPhoto: urlImg4,
       price: 10.99,
       desc: loren,
