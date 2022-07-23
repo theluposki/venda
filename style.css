@@ -135,7 +135,6 @@ a.active-link {
   min-height: 300px;
   border: solid 1px var(--dark);
   margin-bottom: 10px;
-  overflow: hidden;
 }
 
 .products li .i-header {
@@ -151,6 +150,7 @@ a.active-link {
   background: blue;
   max-width: 100vw;
   max-height: 300px;
+  overflow: hidden;
 }
 
 .products li .i-main img {
