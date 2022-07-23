@@ -152,7 +152,7 @@ a.active-link {
 }
 
 .products li .i-main img {
-	width: 100%;
+	width: 100vw;
   height: 300px;
   object-fit: cover;
 }
