@@ -134,10 +134,10 @@ a.active-link {
   position: relative;
   max-width: 100%;
   min-height: 300px;
-  border: solid 1px var(--dark);
   margin-bottom: 10px;
   border-radius: 5px;
   overflow: hidden;
+  box-shadow: 0 0 3px var(--dark);
 }
 
 .products li .i-header {
