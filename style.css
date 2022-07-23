@@ -84,6 +84,7 @@ nav {
   padding: 0 20px;
   box-shadow: 0 0 3px var(--dark);
   background-color: var(--white);
+  z-index: 7000;
 }
 
 a {
