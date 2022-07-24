@@ -18,6 +18,18 @@ export const About = {
             <i v-if="upOrDown" class="ai-chevron-down"></i>
             <i v-else class="ai-chevron-up"></i>
           </button>
+          <div v-if="upOrDown" class="details"></div>
+          <div class="details-options">
+            <button class="btn-options">
+              <i class="ai-heart"></i>
+            </button>
+            <button class="btn-options">
+              <i class="ai-circle-plus-fill"></i>
+            </button>
+          </div>
+          <div class="details-price">
+            {{ convertBRL(item.price) }}
+          </div>
         </div>
       </li>
     </ul>
@@ -41,6 +53,9 @@ export const About = {
         items[index].classList.remove("active-details")
       }
 
+    },
+    convertBRL(value) {
+      return new Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(value)
     }
   }
 }
